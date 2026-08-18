@@ -10,12 +10,10 @@
       <stop offset="1" stop-color="#161A1E"/>
     </linearGradient>
   </defs>
+  <!-- Deliberately does NOT adapt to dark mode: this must stay pixel-identical to the
+       logo uploaded on the Google OAuth consent screen, which is the light variant. -->
   <style>
     .bg-dark, .glyph-dark { opacity: 0 }
-    @media (prefers-color-scheme: dark) {
-      .bg-light, .glyph-light { opacity: 0 }
-      .bg-dark, .glyph-dark { opacity: 1 }
-    }
   </style>
 
   <rect class="bg-light" width="1024" height="1024" rx="225" fill="url(#bg)"/>
