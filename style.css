@@ -61,11 +61,21 @@ body {
 }
 
 .site-header a.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-size: 1.15rem;
   font-weight: 650;
   letter-spacing: -0.01em;
   color: var(--text);
   text-decoration: none;
+}
+
+.site-header a.wordmark img {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: block;
 }
 
 .site-header nav {

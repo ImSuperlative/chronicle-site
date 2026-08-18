@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Chronicle app icon">
+  <title>Chronicle</title>
+  <defs>
+    <linearGradient id="bg" x1="0.5" y1="0" x2="0.5" y2="0.7">
+      <stop offset="0" stop-color="#E9EDF1"/>
+      <stop offset="1" stop-color="#C2CBD3"/>
+    </linearGradient>
+    <linearGradient id="bgDark" x1="0.5" y1="0" x2="0.5" y2="0.7">
+      <stop offset="0" stop-color="#3E464E"/>
+      <stop offset="1" stop-color="#161A1E"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .bg-dark, .glyph-dark { opacity: 0 }
+    @media (prefers-color-scheme: dark) {
+      .bg-light, .glyph-light { opacity: 0 }
+      .bg-dark, .glyph-dark { opacity: 1 }
+    }
+  </style>
+
+  <rect class="bg-light" width="1024" height="1024" rx="225" fill="url(#bg)"/>
+  <rect class="bg-dark" width="1024" height="1024" rx="225" fill="url(#bgDark)"/>
+
+  <g class="glyph-light">
+    <rect x="240" y="216" width="544" height="600" rx="28" fill="none" stroke="#1B2126" stroke-width="36"/>
+    <path d="M348 216 L348 816" stroke="#1B2126" stroke-width="24"/>
+    <path d="M614 833 L714 833 L714 933 L664 883 L614 933 Z" fill="#2F6C88"/>
+    <path d="M637 440 A110 110 0 1 0 637 608" fill="none" stroke="#1B2126" stroke-width="52" stroke-linecap="round"/>
+    <circle cx="676" cy="524" r="28" fill="#2F6C88"/>
+  </g>
+
+  <g class="glyph-dark">
+    <rect x="240" y="216" width="544" height="600" rx="28" fill="none" stroke="#FFFFFF" stroke-width="36"/>
+    <path d="M348 216 L348 816" stroke="#FFFFFF" stroke-width="24"/>
+    <path d="M614 833 L714 833 L714 933 L664 883 L614 933 Z" fill="#8FB8CC"/>
+    <path d="M637 440 A110 110 0 1 0 637 608" fill="none" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round"/>
+    <circle cx="676" cy="524" r="28" fill="#8FB8CC"/>
+  </g>
+</svg>
