@@ -70,13 +70,32 @@ specific feature.</p>
 
 <h3>Google Photos</h3>
 
-<p>Only if you connect it. Signing in happens on Google's own website; Chronicle never
-sees your Google password. The sign-in token is stored in the iOS Keychain, and the
-pictures you pick are downloaded from Google's servers to your device. Chronicle requests
-read-only access to photos you select through Google's own picker, and nothing else.
-Whatever Google records about that activity is governed by
+<p>Only if you connect it, and Chronicle works fully without it. It exists so that you can
+put pictures from your Google Photos library into your own journal entries.</p>
+
+<p>Signing in happens on Google's own website; Chronicle never sees your Google password.
+Chronicle requests a single read-only permission,
+<code>photospicker.mediaitems.readonly</code>, which lets it receive the photos you pick
+through Google's own picker — and nothing else. It cannot browse your library and cannot
+see photos you did not select.</p>
+
+<p>The photos you pick are downloaded from Google's servers directly to your device and
+saved into your journal. The sign-in token is stored in the iOS Keychain. Because
+Chronicle has no server, no Google user data is ever transmitted to the developer or to
+any third party. You can disconnect Google Photos at any time in Settings. Whatever Google
+records about that activity is governed by
 <a href="https://policies.google.com/privacy">Google's privacy policy</a>. Google is the
 only account Chronicle connects to.</p>
+
+<div class="note">
+  <p><strong>Limited Use disclosure.</strong> Chronicle's use and transfer of information
+  received from Google APIs to any other app will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements. Specifically: Google user data is used only to
+  provide the user-facing feature you invoked — adding your chosen photos to your journal —
+  and is never used for advertising, never sold, never transferred to third parties except
+  as required by law, and never read by any human.</p>
+</div>
 
 <h3>Journal destinations</h3>
 
